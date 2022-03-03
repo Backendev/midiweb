@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css"></link>
+    <style id="varscss"></style>
+    <style id="varssize"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Midi App</title>
+</head>
+<body onresize="config_size()" class="h100">
+    <div class="container center h100">
+        <div id="title" class="center h5">MIDI Web</div>
+        <div id="ingreso"  class="h50" style="display:grid">
+            <div>Ingreso</div>
+            <div class="center h50" >
+                <div class="h25" style="display:grid;align-items: end;padding: 2%;">
+                    <input type="text" id="user" placeholder="user" sty>
+                </div>
+                <div class="h25" style="display:grid;align-items: start;margin: 2%;">
+                    <button id="pet" onclick="unirse()">Unirse</button>
+                </div>
+                
+            </div>
+        </div>
+        <div id="sounds">
+
+        </div>
+        <div id="window" class="h95" style="display:none">
+            <div id="output" class="h30">
+
+            </div>
+            <div class="h5">
+                <input type="text" id="message" placeholder="message">
+                <button id="sender">Send</button>
+            </div>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="sound_lib.js"></script>
+            <script src="./main.js"></script>
+            <script src="./lib.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/webmidi@next/dist/iife/webmidi.iife.js"></script>
+            <script>
+                var interface_session = "0"
+                var interface_id_session = null
+                var user_session = null
+                var input_session = null
+                var input_l = null
+                var socket = null
+                var lib_bateria_1 = null
+            </script>
+            <script src="./libs_s.js"></script>
+            <script src="./midi.js"></script>
+            <script>
+                iniciar_midi()
+                init_config()
+                config_size()
+                cargar_lib_sounds(lib_bateria_1)
+            </script>
+            <div class="h5" id="sel_interfaces"></div>
+            <div class="h55" id="midi_output">
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

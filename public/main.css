@@ -1,0 +1,164 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    color:#80ED99;
+    background-color:#22577A
+    /* 38A3A5
+    57CC99
+    80ED99 */
+
+}
+colors{
+    color: #22577A;
+    color: #38A3A5;
+    color:#57CC99;
+    color: #80ED99;
+    color:#00AAD4;
+    color:#0088AA;
+    color:#55DDFF;
+    color:#00D4AA;
+    color:#80FFE6;
+    color:#008066;
+    color: #DBAC68;
+    color: #FF9966;
+    color: lemonchiffon;
+
+
+
+}
+::placeholder {
+    color: var(--color5);
+    font-size: 1em;
+  }
+input{
+    background-color: var(--color6);
+    color:var(--color7);
+    text-decoration: none;
+    border: 1px var(--color7) solid;
+    border-radius: 5%;
+}
+button{
+    background-color: var(--color6);
+    color:var(--color7);
+    text-decoration: none;
+    border: 1px var(--color7) solid;
+    border-radius: 5%;
+}
+.center{
+    width: 100%;
+    text-align: center;
+    display:grid;
+    align-items: center;
+}
+#output{
+    background-color: var(--color6);
+    color:var(--color7);
+    text-decoration: none;
+    border: 1px var(--color7) solid;
+    border-radius: 5%;
+    
+}
+#midi_output{
+    background-color: var(--color5);
+    color:var(--color1);
+    text-decoration: none;
+    border: 1px var(--color7) solid;
+    border-radius: 5%;
+    overflow-y: scroll;
+}
+#ingreso{
+    width:30%;
+    margin-left: 35%;
+    border: 1px var(--color9) solid;
+    border-radius: 5%;
+}
+.h5{
+    width: 100%;
+    height: calc(var(--heightMain)*0.05);
+    padding: 0px;
+    margin: 0px;
+}
+.h5b{
+    width: 98%;
+    height: calc(var(--heightMain)*0.05);
+    padding: 0px;
+    margin: 1%;
+}
+.h50{
+    width: 100%;
+    height: calc(var(--heightMain)*0.5);
+    padding: 0px;
+    margin: 0px;
+}
+.h30{
+    width: 100%;
+    height: calc(var(--heightMain)*0.3);
+    padding: 0px;
+    margin: 0px;
+}
+.h95{
+    width: 100%;
+    height: calc(var(--heightMain)*0.949);
+    padding: 0px;
+    margin: 0px;
+}
+.h55{
+    width: 100%;
+    height: calc(var(--heightMain)*0.52);
+    padding: 0px;
+    margin: 0px;
+}
+.h25{
+    width: 96%;
+    height: calc(var(--heightMain)*0.25);
+    padding: 0px;
+    margin: 0px;
+}
+.h100{
+    width: 98%;
+    height: calc(var(--heightMain)*0.99);
+    padding: 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.interface_output{
+    width:calc(var(--widthMain)*0.94);
+    overflow-x: scroll;
+    background-color: var(--color1);
+    border: 1px var(--color7) solid;
+    display: flex;
+}
+.interface_section{
+    color:var(--color1);
+    height: calc(var(--heightMain)*0.1);
+    border-bottom: 1px var(--color1) solid;
+    background-color: var(--color13);
+}
+.interface_container{
+    padding-bottom: 1%;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: var(--color5);
+    border-radius: 4px;
+}
+.note_output{
+    display:grid;
+    align-items: center;
+    color:var(--color13);
+    border-right: var(--color13);
+    font-size: 0.6rem;
+    padding-right: 1%;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: var(--color6);
+    box-shadow: 0 0 2px 1px var(-color1);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: var(--color1);
+}
