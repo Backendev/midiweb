@@ -15,7 +15,7 @@ const socketio = require('socket.io')
 let users = []
 
 //settings
-app.set('port',process.env.PORT || 3000)
+app.set('port',process.env.PORT || 8000)
 
 //estaticos
 app.use(express.static(path.join(__dirname,'public')))
